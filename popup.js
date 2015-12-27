@@ -22,7 +22,7 @@ function httpGet(theUrl) {
                 var usageValTotalOffPeak = xmlhttp.response.getElementById("usageValTotalOffPeak").innerHTML.trim();
                 var usageValUsed = xmlhttp.response.getElementById("usageValUsed").innerHTML.trim();
                 var usageValTotal = xmlhttp.response.getElementById("usageValTotal").innerHTML.trim();
-                renderStatus("Total \t" + usageValUsed + " / " + usageValTotal + " \n " + "Peak \t" + usageValUsedPeak + " / " + usageValTotalPeak + " \n " + "OffPeak \t" + usageValUsedPeak + " / " + usageValTotalPeak);
+                renderStatus("Total \t" + usageValUsed + " / " + usageValTotal + " \n " + "Peak \t" + usageValUsedPeak + " / " + usageValTotalPeak + " \n " + "OffPeak \t" + usageValUsedOffPeak + " / " + usageValTotalOffPeak);
             } else {
                 renderStatus("\t Sorry \t");
             }
