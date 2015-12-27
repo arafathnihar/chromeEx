@@ -16,13 +16,13 @@ function httpGet(theUrl) {
                 var remainingValOffPeak = "Remaining OffPeak \t" + xmlhttp.response.getElementById("remainingValOffPeak").innerHTML.trim();
                 renderStatus(remainingTotal + '\n' + remainingValPeak + '\n' + remainingValOffPeak);
             } else if (xmlhttp.response.getElementById("usageValUsedPeak")) { // && xmlhttp.response.getElementById("usageValTotalPeak") && xmlhttp.response.getElementById("usageValUsedOffPeak") && xmlhttp.response.getElementById("usageValTotalOffPeak") && xmlhttp.response.getElementById("usageValUsed") && xmlhttp.response.getElementById("usageValTotal")) {
-                var usageValUsedPeak = xmlhttp.response.getElementById("usageValUsedPeak").innerHTML.trim(); 
+                var usageValUsedPeak = xmlhttp.response.getElementById("usageValUsedPeak").innerHTML.trim();
                 var usageValTotalPeak = xmlhttp.response.getElementById("usageValTotalPeak").innerHTML.trim();
                 var usageValUsedOffPeak = xmlhttp.response.getElementById("usageValUsedOffPeak").innerHTML.trim();
                 var usageValTotalOffPeak = xmlhttp.response.getElementById("usageValTotalOffPeak").innerHTML.trim();
                 var usageValUsed = xmlhttp.response.getElementById("usageValUsed").innerHTML.trim();
                 var usageValTotal = xmlhttp.response.getElementById("usageValTotal").innerHTML.trim();
-                renderStatus("Total \t" +  usageValUsed + " / "+ usageValTotal + " \n " + "Peak \t" +  usageValUsedPeak + " / "+ usageValTotalPeak + " \n " +"OffPeak \t" +  usageValUsedPeak + " / "+ usageValTotalPeak);
+                renderStatus("Total \t" + usageValUsed + " / " + usageValTotal + " \n " + "Peak \t" + usageValUsedPeak + " / " + usageValTotalPeak + " \n " + "OffPeak \t" + usageValUsedPeak + " / " + usageValTotalPeak);
             } else {
                 renderStatus("\t Sorry \t");
             }
