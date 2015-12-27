@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Getting started example",
-  "description": "This extension shows a Google Image search result for the current page",
+  "name": "Etisalat Useage",
+  "description": "This extension shows Data balance of etisalat connection",
   "version": "1.0",
 
   "browser_action": {
