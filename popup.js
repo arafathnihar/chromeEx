@@ -24,7 +24,7 @@ function httpGet(theUrl) {
                 var usageValTotal = xmlhttp.response.getElementById("usageValTotal").innerHTML.trim();
                 renderStatus("Total \t" +  usageValUsed + " / "+ usageValTotal + " \n " + "Peak \t" +  usageValUsedPeak + " / "+ usageValTotalPeak + " \n " +"OffPeak \t" +  usageValUsedPeak + " / "+ usageValTotalPeak);
             } else {
-                renderStatus("Sorry");
+                renderStatus("\t Sorry \t");
             }
         }
     }
